@@ -29,6 +29,7 @@ Import all the required libraries to build the model as follows:
 
 # Data Loading :
 CIFAR data sets are one of the most well-known data sets in computer vision tasks created by Geoffrey Hinton, Alex Krizhevsky and Vinod Nair.There are 100 different category labels containing 600 images for each (1 testing image for 5 training images per class). The 100 classes in the CIFAR-100 are grouped into 20 super-classes. Each image comes with a “fine” label (the class to which it belongs) and a “coarse” label (the super-class to which it belongs). We will work with the fine labels.
+![classes](https://user-images.githubusercontent.com/49706927/61202818-3c034380-a706-11e9-836e-0c6a4785c5dd.png)
 
 The Dataset can be loaded from keras as follows:
 
