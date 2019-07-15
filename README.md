@@ -2,7 +2,7 @@
 
 The aim of this project is to classify Images labelled over 100 categories.We will be using Convolutional Neural Networks to perform the training on dataset CIFAR 100.
 
-Tools used : keras 2.1.1,numpy
+Tools used : keras 2.1.1,numpy,matplotlib
 # Importing the necessary libraries :
 Note : use keras 2.1.1 , It can be installed as follows:
 
@@ -395,5 +395,8 @@ Finally,Running the epochs :
                                               validation_steps=(len(x_train) / BATCH_SIZE))
                                               
 We are done with the training now,as the number of epochs are 16500 it takes a lot of time to run.
+
+
+Contributed by : KUSHAL SHARMA , SRIPRIYA ARABALA
 
   
