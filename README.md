@@ -42,10 +42,10 @@ dimensions of training and testing data set can be printed with the code:
                        print(x_train.shape,x_test.shape)
                        print(y_train.shape,y_test.shape)
 
-x_train :(50000,100) ,
-x_test  :(10000,) , 
-y_train :(50000,100) ,
-y_test  :(10000,)
+x_train :(50000,32,32,3) ,
+x_test  :(10000,32,32,3) , 
+y_train :(50000,1) ,
+y_test  :(10000,1)
 
 # Feature Extraction and building model using Convolutional Neural Network :
 First few Images can be printed as follows :
@@ -86,6 +86,10 @@ The Keras library offers a function called to_categorical() that can be used to 
                        y_train = to_categorical(y_train, NUM_CLASSES)
                        y_test = to_categorical(y_test, NUM_CLASSES)
                        
+                       print(y_train.shape,y_test.shape)
+y_train :(50000,100)
+y_test  :(10000,100)
+
 Now,for convenience to deal with data,Let's Normalise the Images:
 
                        x_train = x_train.astype('float32')
